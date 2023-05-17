@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Tahoma,Arial,sans-serif;
+    /* height: 5000px; */
+}
+
+/* start content left  */
+.page {
+    display: flex;
+    justify-content: flex-end;
+}
+.page .content-left {
+    background-color: purple;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+.page .content-left .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.page .content-left .content h1 {
+    color: white;
+}
+.page .content-left .content form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.page .content-left .content form input {
+    padding: 10px 30px;
+    outline: none;
+    width: 300px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+}
+.page .content-left .content form i {
+    color: white;
+    background-color: #171515;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-left: none;
+    cursor: pointer;
+}
+
+/* star content Right  */
+
+.page .content-right {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    text-align: center;
+    gap: 20px;
+}
+.page .content-right .box {
+    background-color: white;
+    box-shadow:2px 2px 6px 2px;
+    margin: 20px auto;
+    height: 95%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.page .content-right .box img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.page .content-right .box h2 {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #aaa;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.page .content-right .box h2:hover {
+    color: #069888;
+}
+.page .content-right .box a {
+    margin-bottom: 20px;
+    background-color: rgb(134, 13, 178);
+    padding: 10px 20px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    cursor: pointer;
+}
+.page .content-right .box a:hover {
+    background-color: #006988;
+}
+
+/* start recipe-details */
+
+.show-details {
+    display: none;
+}
+.recipe-details {
+    background-color: purple;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    padding: 5px;
+}
+.recipe-details .close {
+    background-color: #aaa;
+    position: absolute;
+    left: 89%;
+    top: 4%;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 10px;
+    line-height: 13px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 31px;
+}
+.recipe-details .close:hover {
+    background-color: red;
+}
+.recipe-details h2 {
+    margin-bottom: 20px;
+    color: #aaa;
+}
+.recipe-details p:first-of-type {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.recipe-details p {
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: aliceblue;
+    font-size: 15px;
+}
+.recipe-details a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.recipe-details a:hover {
+    color: #006988;
+}
+
+.over-lay {
+    position: absolute;
+    top: 50%;
+    left: 74%;
+    background-color: red;
+    width: 17%;
+    height: 5%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
